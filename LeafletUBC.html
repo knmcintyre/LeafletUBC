@@ -14,10 +14,6 @@
         <! -- jQuery is a library that simplifies many thigs in JavaScript. Used to retrieve data from the web -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
        
-        <script src="./p5.min.js"></script>
-         <!-- this should be unnecessary in this code, as we aren't using p5.js... 
-            but since I'm showing you the code running in the p5 editor, the editor expects p5.js to be here... 
-            otherwise, it gives you a "TypeError: window.p5 is undefined". We won't use any of p5.js's commands, though! -->
      </head>
      <body>
         <div id="mapid" style="width: 600px; height: 400px;"></div>
@@ -35,7 +31,7 @@
             var topoTiles = L.tileLayer(
                 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
                 maxZoom: 17,
-                attribution: 'Basemap data: &copy;' +'
+                attribution: 'Basemap data: &copy;' +
                 '<a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>' +
                 '<a href="http://viewfinderpanoramas.org">SRTM</a>| Basemap style: &copy;' +
                 '<a href="https://opentopomap.org">OpenTopoMap</a>' +
