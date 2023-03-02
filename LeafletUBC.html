@@ -59,7 +59,7 @@
                     layer.bindTooltip(feature.properties.FAC_RATE);
                 }
             }
-            $getJSON("https://raw.githubusercontent.com/UBCGeodata/ubcv-parking/master/geojson/ubcv_parking_www.geojson",
+            $.getJSON("https://raw.githubusercontent.com/UBCGeodata/ubcv-parking/master/geojson/ubcv_parking_www.geojson",
                 function(data){
                     // Once UBC parking GeoJSON layer is loaded then it is added to the map
                     L.geoJson(data, {
